@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main()
+{ float a,b,c;
+printf("Sayilari dahil et\n");
+scanf("%f%f%f",&a,&b,&c);
+if(a>b && a>c)
+printf("Girilen sayilardan en buyugu %f-dir",a);
+else 
+if (b>a && b>c)
+printf("Girilen sayilardan en buyugu %f-dir",b);
+if (c>a && c>b)
+printf("Girilen sayilardan en buyugu %f-dir",c);
+}
