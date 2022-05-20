@@ -1,0 +1,21 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <locale.h>
+int main()
+{ setlocale(LC_ALL, "Turkish");
+	int s,k,sayi;
+	int yildiz,bosluk;
+printf("Lütfen üçgenin satýr sayýsýný girin:\n");
+scanf("%d",&sayi);
+yildiz=1;
+bosluk=sayi-1;
+
+	for(k=0;k<sayi;k++){
+		for(s=0;s<bosluk;s++){printf(" ");
+		}
+		for(s=0;s<yildiz;s++){printf("*");
+		}
+		printf("\n");
+		yildiz=yildiz+2;
+		bosluk=bosluk-1;
+	}}
