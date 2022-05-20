@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <locale.h>
+
+int main()
+{ setlocale(LC_ALL, "Turkish");
+srand(time(NULL));
+	int t=0,a,i=0,b=rand()%100+1;
+	printf("Tahmin ettiğiniz sayıyı yazın:\n");
+	while(i<6)
+	{
+		scanf("%d",&a);
+		if(a==b)
+		{printf("Doğru Tahmin!");
+	t=1;
+	i=6;}
+		else	 if(a<b)
+		printf("Küçük sayı girdiniz,lütfen daha büyük sayı giriniz:\n");
+		
+		
+		else 
+		printf("Büyük sayı girdiniz,lütfen daha kücük sayı giriniz:\n")	;
+		i++;
+			}if(t==0)
+	printf("\nSayıyı bulamadınız!");
+
+
+}
