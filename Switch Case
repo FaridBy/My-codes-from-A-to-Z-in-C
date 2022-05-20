@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+	float a,b,toplam,cikarma,bolme,carpim;
+	char islem;
+		printf("1.sayiyi girin\n");
+		scanf("%f", &a);
+			printf("2.sayiyi girin\n");
+		scanf("%f", &b);
+	toplam=(a+b);
+	carpim=a*b;
+	bolme=a/b;
+	cikarma=a-b;
+
+
+		printf(" islemi secin\n");
+	scanf("%s", &islem);
+	switch(islem)
+	{
+         case '+':
+    	printf("%f",toplam);
+    	break;
+    	case '-':
+    	printf("%f",cikarma);
+    	break;
+    	case '*':
+    	printf("%f",carpim);
+    	break;
+    	case '/':
+    	printf("%f",bolme);
+    	break;
+		default:
+    		printf("dogru islem girmediniz");	}
+    		
+    
+		}
+    	
