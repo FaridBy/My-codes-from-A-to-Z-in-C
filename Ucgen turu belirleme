@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main()
+{ float a,b,c;
+printf("1. tarafin uzunlugunu giriniz\n");
+scanf("%f",&a);
+printf("2. tarafin uzunlugunu giriniz\n");
+scanf("%f",&b);
+printf("3. tarafin uzunlugunu giriniz\n");
+scanf("%f",&c);
+if(a==b && b==c)
+printf("eskenar ucgen");
+else
+if(a==b && b!=c)
+printf("ikizkenar");
+else 
+if(a!=b && b==c)
+printf("ikizkenar");
+else 
+if(c!=b && a==c)
+printf("ikizkenar");
+else 
+if(a!=b && b!=c)
+printf("cesitkenar");
+return 0;
+}
