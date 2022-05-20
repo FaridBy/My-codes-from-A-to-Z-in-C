@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+float a,b,x,y,t,z;
+char islem;
+printf("1. sayiyi dahil edin\n");
+	scanf("%f",&a);
+	printf("2. sayiyi dahil edin\n");
+	scanf("%f",&b);
+		x=a+b;
+	y=a-b;
+	z=a*b;
+	t=a/b;
+	printf("islemi dahil edin\n");
+	scanf("%s",&islem);
+	if(islem=='+')
+
+	printf("%f",x);
+	else 
+	if(islem=='*')
+	printf("%f",z);
+	else 
+	if(islem=='-')
+	printf("%f",y);
+	else 
+	if(islem=='*')
+	printf("%f",z);
+	else 
+	if(islem=='/')
+	printf("%f",t);
+else
+printf("dogru islem girmediniz");	
+	return 0;
+}
