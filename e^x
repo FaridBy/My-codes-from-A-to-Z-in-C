@@ -1,0 +1,26 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
+#include <locale.h>
+int main()
+{ setlocale(LC_ALL, "Turkish");
+ double a,faktor,t=1;
+ double x,n,l, toplam;
+ while(l<2){
+printf(" e-nin derecesi olacak sayı girin:\n");
+scanf("%lf",&x);
+toplam=0;
+for(t=0;t<15;t++)
+{faktor=1;
+for (a=1;a<t+1;a++)
+{
+faktor=faktor*a;
+
+}
+
+
+ n=pow(x,t)/faktor;
+ toplam=toplam+n;
+
+}
+printf("e üstü %.0f, %.2f-dir.\n",x,toplam);}}
