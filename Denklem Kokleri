@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{ float a,b,c,x1,x2,D;
+
+printf("Katsayilari dahil edin\n");
+scanf("%f%f%f", &a,&b,&c);
+D=((b*b)-(4*a*c));
+x1=(sqrt(D)-b)/(2*a);
+x2=(-sqrt(D)-b)/(2*a);
+if(D>0) 
+
+printf("Denklemin Kokleri: %f\n%f-dir" ,x1,x2);
+else
+if(D==0)
+printf("Denklemin 1 koku var, o da %f-dir." , x1);
+else
+printf("Denklemin koku yoxdur");
+
+}
