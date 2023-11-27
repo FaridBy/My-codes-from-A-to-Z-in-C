@@ -1,7 +1,7 @@
 #include <stdio.h>
  #include <math.h>
  #include <locale.h>
- // Armstrong sayısı rakamlarının küpleri toplamı kendisine eşit olan sayıdır...
+ // Armstrong sayÃ½sÃ½ rakamlarÃ½nÃ½n kÃ¼pleri toplamÃ½ kendisine eÃ¾it olan sayÃ½dÃ½r...
 void fonk();
 int main()
 { setlocale(LC_ALL,"Turkish");
@@ -23,7 +23,7 @@ void fonk()
         sayi = sayi / 10;
     }
     if(c==d)
-    printf("%d ARMSTRONG sayısıdır.",c);
+    printf("%d is ARMSTRONG number.",c);
     else 
-    printf("%d ARMSTRONG sayısı değil!",d);
+    printf("%d is not ARMSTRONG number!",d);
     }
